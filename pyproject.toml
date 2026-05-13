@@ -1,0 +1,17 @@
+[project]
+name = "alphax_wallet"
+authors = [
+    { name = "AlphaX", email = "support@alphax.local"}
+]
+description = "Customer wallet, booking integration, and multi-party settlement on top of ERPNext"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = []
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+erpnext = ">=15.0.0"

@@ -1,0 +1,25 @@
+{
+ "content": null,
+ "creation": "2025-05-12 00:00:00",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "octicon octicon-git-pull-request",
+ "idx": 0,
+ "modified": "2025-05-12 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "alphax-booking-flow",
+ "owner": "Administrator",
+ "page_name": "alphax-booking-flow",
+ "roles": [
+  {"role": "Wallet Manager"},
+  {"role": "Wallet User"},
+  {"role": "Accounts Manager"},
+  {"role": "Sales Manager"},
+  {"role": "Purchase Manager"},
+  {"role": "System Manager"}
+ ],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Booking Flow"
+}

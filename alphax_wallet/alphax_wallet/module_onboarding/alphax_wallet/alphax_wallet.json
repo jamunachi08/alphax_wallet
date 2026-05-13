@@ -1,0 +1,28 @@
+{
+ "allow_roles": [
+  {"role": "System Manager"},
+  {"role": "Wallet Manager"}
+ ],
+ "creation": "2025-05-10 00:00:00",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "AlphaX Wallet Setup",
+ "owner": "Administrator",
+ "steps": [
+  {"step": "Configure Wallet Settings"},
+  {"step": "Verify GL Accounts"},
+  {"step": "Create First Customer Wallet"},
+  {"step": "Test Top-up Flow"},
+  {"step": "Test Booking with Wallet"},
+  {"step": "Review Wallet Reports"}
+ ],
+ "subtitle": "Wallet, booking integration, and multi-party settlement",
+ "success_message": "🎉 AlphaX Wallet is configured and live. Your customers can now pay with wallet on the website.",
+ "title": "Get started with AlphaX Wallet"
+}

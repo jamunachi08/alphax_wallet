@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include alphax_wallet *.css
+recursive-include alphax_wallet *.csv
+recursive-include alphax_wallet *.html
+recursive-include alphax_wallet *.ico
+recursive-include alphax_wallet *.js
+recursive-include alphax_wallet *.json
+recursive-include alphax_wallet *.md
+recursive-include alphax_wallet *.png
+recursive-include alphax_wallet *.py
+recursive-include alphax_wallet *.svg
+recursive-include alphax_wallet *.txt
+recursive-exclude alphax_wallet *.pyc

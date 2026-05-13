@@ -1,0 +1,5 @@
+# Patches executed in sequence during migrate
+# Format: alphax_wallet.patches.<filename>
+
+alphax_wallet.patches.v1_1.audit_multi_currency_wallets
+alphax_wallet.patches.v1_5.migrate_themes_to_brands

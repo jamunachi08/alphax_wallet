@@ -1,0 +1,19 @@
+{
+ "action": "Create Entry",
+ "action_label": "Open a Customer Wallet to Test Top-up",
+ "creation": "2025-05-10 00:00:00",
+ "description": "## Step 4 — Test the top-up flow\n\nOpen the wallet you just created and click **Actions → Top Up**. Enter a small amount (say 1000) and submit.\n\n**What you should see:**\n1. A new **Wallet Transaction** of type *Deposit* gets created with a unique ID like `WTX-2025-000001`\n2. The wallet's **Current Balance** updates immediately\n3. A **Journal Entry** is auto-created and submitted: `Dr. Bank, Cr. Customer Wallet Liability`\n4. The Customer's card-level *Wallet Balance* field updates too\n\nThis step will tick automatically once your first Wallet Transaction is created. If any step fails, the most common cause is a missing GL account in Wallet Settings — go back to Step 2.",
+ "doctype": "Onboarding Step",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "name": "Test Top-up Flow",
+ "owner": "Administrator",
+ "reference_document": "Wallet Transaction",
+ "show_form_tour": 0,
+ "show_full_form": 1,
+ "title": "Test Top-up Flow",
+ "validate_action": 1
+}

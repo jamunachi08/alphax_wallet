@@ -1,0 +1,21 @@
+{
+ "action": "View Report",
+ "action_label": "Open Wallet Balance Summary",
+ "creation": "2025-05-10 00:00:00",
+ "description": "## Step 6 — Review the wallet reports\n\nThree reports come with the app:\n\n- **Wallet Balance Summary** — every active wallet, current balance, held amount, available, with totals at the bottom\n- **Wallet Transaction Ledger** — drill-down ledger with filters by customer, type, date\n- **Supplier Settlement Statement** — what each supplier was paid in a period, with commission deducted\n\nOpen the Wallet Balance Summary and confirm the **Total** at the bottom matches the GL balance of your *Customer Wallet Liability* account. If it ever drifts, the daily reconciliation job will email you.\n\n**You're done.** The website integration team can now use the REST API endpoints at `/api/method/alphax_wallet.api.wallet.*` to drive top-ups, holds, captures, and releases from your customer-facing booking site.",
+ "doctype": "Onboarding Step",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "name": "Review Wallet Reports",
+ "owner": "Administrator",
+ "reference_report": "Wallet Balance Summary",
+ "report_reference_doctype": "Customer Wallet",
+ "report_type": "Script Report",
+ "show_form_tour": 0,
+ "show_full_form": 1,
+ "title": "Review Wallet Reports",
+ "validate_action": 1
+}

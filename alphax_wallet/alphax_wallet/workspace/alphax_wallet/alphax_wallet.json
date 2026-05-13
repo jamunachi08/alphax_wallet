@@ -1,0 +1,254 @@
+{
+ "charts": [
+  {
+   "chart_name": "Wallet Liability Trend",
+   "label": "Wallet Liability Trend"
+  },
+  {
+   "chart_name": "Top-ups vs Withdrawals",
+   "label": "Top-ups vs Withdrawals"
+  }
+ ],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<div style=\\\"display:flex;align-items:center;justify-content:space-between;padding:20px 28px;margin:8px 0 18px;border-radius:14px;background:linear-gradient(135deg,#18061F 0%,#2B1038 55%,#3C1745 100%);color:#F5EDEF;position:relative;overflow:hidden;\\\"><div style=\\\"position:relative;z-index:1;\\\"><div style=\\\"font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#D9A54A;font-weight:600;\\\">AlphaX Wallet</div><div style=\\\"font-size:18px;font-weight:700;margin-top:6px;color:#F5EDEF;\\\">Open the new Wallet Dashboard</div><div style=\\\"font-size:12.5px;color:#E6D6BE;margin-top:2px;opacity:0.95;\\\">KPIs, trend charts, recent activity, top wallets \\u2014 all in one screen.</div></div><a href=\\\"/app/alphax-wallet-dashboard\\\" style=\\\"background:linear-gradient(135deg,#D9A54A,#F0C06A);color:#18061F;padding:11px 22px;border-radius:8px;font-weight:600;text-decoration:none;font-size:13px;box-shadow:0 4px 12px rgba(217,165,74,0.35);position:relative;z-index:1;\\\">Open Dashboard \\u2192</a></div>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:0.06em;\\\">Key Metrics</span>\",\"col\":12}},{\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Wallet Liability\",\"col\":3}},{\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Wallets\",\"col\":3}},{\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Top-ups Today\",\"col\":3}},{\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Held Today\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:0.06em;\\\">Setup &amp; Onboarding</span>\",\"col\":12}},{\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"AlphaX Wallet Setup\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:0.06em;\\\">Quick Actions</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wallet Dashboard\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Wallets\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wallet Transactions\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Top-up Requests\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Flow\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Commission\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wallet Balance Summary\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wallet Settings\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:0.06em;\\\">Modules</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Wallet Operations\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Accounting & Settlement\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Booking & Commission\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size:11px;font-weight:700;color:#6B7280;text-transform:uppercase;letter-spacing:0.06em;\\\">Trends</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Wallet Liability Trend\",\"col\":8}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Top-ups vs Withdrawals\",\"col\":4}}]",
+ "creation": "2025-05-10 00:00:00",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "credit-card",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "AlphaX Wallet",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wallet Operations",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Wallet",
+   "link_count": 0,
+   "link_to": "Customer Wallet",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wallet Transaction",
+   "link_count": 0,
+   "link_to": "Wallet Transaction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wallet Topup Request",
+   "link_count": 0,
+   "link_to": "Wallet Topup Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wallet Settings",
+   "link_count": 0,
+   "link_to": "Wallet Settings",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accounting & Settlement",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Wallet Balance Summary",
+   "link_count": 0,
+   "link_to": "Wallet Balance Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Wallet Transaction Ledger",
+   "link_count": 0,
+   "link_to": "Wallet Transaction Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Supplier Settlement Statement",
+   "link_count": 0,
+   "link_to": "Supplier Settlement Statement",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Booking & Commission",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Booking Commission",
+   "link_count": 0,
+   "link_to": "Booking Commission",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Order",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "AlphaX Wallet",
+ "number_cards": [
+  {
+   "label": "Active Wallets",
+   "number_card_name": "Active Wallets"
+  },
+  {
+   "label": "Total Wallet Liability",
+   "number_card_name": "Total Wallet Liability"
+  },
+  {
+   "label": "Held Today",
+   "number_card_name": "Held Today"
+  },
+  {
+   "label": "Top-ups Today",
+   "number_card_name": "Top-ups Today"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 100.0,
+ "shortcuts": [
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Wallet Dashboard",
+   "link_to": "alphax-wallet-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "format": "{} Active",
+   "label": "Customer Wallets",
+   "link_to": "Customer Wallet",
+   "stats_filter": "{\"status\":\"Active\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Wallet Transactions",
+   "link_to": "Wallet Transaction",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "format": "{} Pending",
+   "label": "Top-up Requests",
+   "link_to": "Wallet Topup Request",
+   "stats_filter": "{\"status\":\"Pending\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Booking Commission",
+   "link_to": "Booking Commission",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Booking Flow",
+   "link_to": "alphax-booking-flow",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Wallet Settings",
+   "link_to": "Wallet Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Wallet Balance Summary",
+   "link_to": "Wallet Balance Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Transaction Ledger",
+   "link_to": "Wallet Transaction Ledger",
+   "type": "Report"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Supplier Settlement",
+   "link_to": "Supplier Settlement Statement",
+   "type": "Report"
+  }
+ ],
+ "title": "AlphaX Wallet"
+}

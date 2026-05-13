@@ -1,0 +1,34 @@
+{
+ "actions": [],
+ "creation": "2025-05-10 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "istable": 1,
+ "field_order": [
+  "sales_order",
+  "booking_date",
+  "customer",
+  "column_break_1",
+  "booking_amount",
+  "commission_rate",
+  "commission_amount"
+ ],
+ "fields": [
+  {"fieldname": "sales_order", "fieldtype": "Link", "label": "Sales Order", "options": "Sales Order", "in_list_view": 1, "reqd": 1},
+  {"fieldname": "booking_date", "fieldtype": "Date", "label": "Booking Date", "in_list_view": 1, "fetch_from": "sales_order.transaction_date", "read_only": 1},
+  {"fieldname": "customer", "fieldtype": "Link", "label": "Customer", "options": "Customer", "in_list_view": 1, "fetch_from": "sales_order.customer", "read_only": 1},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "booking_amount", "fieldtype": "Currency", "label": "Booking Amount", "in_list_view": 1, "options": "parent.currency", "fetch_from": "sales_order.grand_total", "read_only": 1},
+  {"fieldname": "commission_rate", "fieldtype": "Percent", "label": "Rate %", "in_list_view": 1, "default": "5"},
+  {"fieldname": "commission_amount", "fieldtype": "Currency", "label": "Commission", "in_list_view": 1, "options": "parent.currency", "read_only": 1}
+ ],
+ "links": [],
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "Booking Commission Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

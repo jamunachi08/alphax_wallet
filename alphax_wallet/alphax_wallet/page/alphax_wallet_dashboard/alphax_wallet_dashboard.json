@@ -1,0 +1,25 @@
+{
+ "content": null,
+ "creation": "2025-05-12 00:00:00",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "octicon octicon-graph",
+ "idx": 0,
+ "modified": "2025-05-12 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "alphax-wallet-dashboard",
+ "owner": "Administrator",
+ "page_name": "alphax-wallet-dashboard",
+ "roles": [
+  {"role": "Wallet Manager"},
+  {"role": "Wallet User"},
+  {"role": "Wallet Auditor"},
+  {"role": "Accounts Manager"},
+  {"role": "Sales Manager"},
+  {"role": "System Manager"}
+ ],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Wallet Dashboard"
+}

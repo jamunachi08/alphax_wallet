@@ -1,0 +1,22 @@
+{
+ "aggregate_function_based_on": "",
+ "creation": "2025-05-10 00:00:00",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Customer Wallet",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Customer Wallet\",\"status\",\"=\",\"Active\",false]]",
+ "function": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Active Wallets",
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "Active Wallets",
+ "owner": "Administrator",
+ "report_function": "",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

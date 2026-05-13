@@ -1,0 +1,19 @@
+{
+ "action": "Update Settings",
+ "action_label": "Set GL Accounts",
+ "creation": "2025-05-10 00:00:00",
+ "description": "## Step 2 — Verify GL Accounts\n\nWallet Settings needs four GL accounts to post Journal Entries correctly:\n\n| Account | Used For |\n|---|---|\n| **Customer Wallet Liability** (Liability) | Holds the company's obligation to customers |\n| **Default Bank Account** (Asset) | Bank/Cash side of every top-up |\n| **Deferred Revenue** (Liability or Income) | Credited when funds are spent on a booking, before delivery |\n| **Commission Expense** (Expense) | Booking commissions paid to employees |\n\nThe app tries to auto-create *Customer Wallet Liability* under Current Liabilities. If your CoA is non-standard, create it manually and pick it here.\n\n**The accounting cycle this enables:**\n```\nDeposit:    Dr. Bank             Cr. Customer Wallet Liability\nWithdrawal: Dr. Wallet Liability Cr. Deferred Revenue\nDelivery:   Dr. Deferred Revenue Cr. Booking Revenue (net of commission)\n```",
+ "doctype": "Onboarding Step",
+ "is_complete": 0,
+ "is_single": 1,
+ "is_skipped": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "name": "Verify GL Accounts",
+ "owner": "Administrator",
+ "reference_document": "Wallet Settings",
+ "show_form_tour": 0,
+ "show_full_form": 1,
+ "title": "Verify GL Accounts",
+ "validate_action": 1
+}

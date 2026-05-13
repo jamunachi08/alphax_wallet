@@ -1,0 +1,19 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create a Wallet-paid Sales Order",
+ "creation": "2025-05-10 00:00:00",
+ "description": "## Step 5 — Test booking with the wallet\n\nCreate a **Sales Order** for the same customer:\n\n1. Pick the customer who has a funded wallet\n2. **Tick the *Pay using Wallet* checkbox** (added by the app, near the customer field)\n3. Add any item — quantity 1, rate equal to or less than the wallet balance\n4. Submit\n\n**What you should see:**\n- A *Hold* Wallet Transaction is created and linked back to the SO\n- The wallet's **Held Amount** increases; the **Current Balance** stays the same\n- The wallet's **Available Balance** = Current − Held\n\nNow create a Sales Invoice from that SO and submit it. The hold gets *captured* (converted to a Withdrawal), the JE posts `Dr. Wallet Liability, Cr. Deferred Revenue`, and the wallet balance drops.\n\nCancel the Sales Order instead, and the hold is released back to the available balance — try both paths.",
+ "doctype": "Onboarding Step",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "name": "Test Booking with Wallet",
+ "owner": "Administrator",
+ "reference_document": "Sales Order",
+ "show_form_tour": 0,
+ "show_full_form": 1,
+ "title": "Test Booking with Wallet",
+ "validate_action": 1
+}

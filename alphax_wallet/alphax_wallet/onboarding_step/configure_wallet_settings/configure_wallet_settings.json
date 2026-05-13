@@ -1,0 +1,21 @@
+{
+ "action": "Update Settings",
+ "action_label": "Open Wallet Settings",
+ "callback_message": "",
+ "callback_title": "",
+ "creation": "2025-05-10 00:00:00",
+ "description": "## Step 1 — Configure Wallet Settings\n\nThis is the control panel for the entire wallet flow. Open it and set:\n\n- **Default Company** and **Default Currency**\n- **Auto-create Wallet on Customer** (recommended: keep ON)\n- **Top-up Approval Threshold** — top-ups at or above this amount need a manager's approval\n- **Hold Expiry (hours)** — how long a Sales Order hold lives before auto-release (default 24h)\n\nYou'll come back to add the four GL accounts in the next step.",
+ "doctype": "Onboarding Step",
+ "is_complete": 0,
+ "is_single": 1,
+ "is_skipped": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "name": "Configure Wallet Settings",
+ "owner": "Administrator",
+ "reference_document": "Wallet Settings",
+ "show_form_tour": 0,
+ "show_full_form": 1,
+ "title": "Configure Wallet Settings",
+ "validate_action": 1
+}

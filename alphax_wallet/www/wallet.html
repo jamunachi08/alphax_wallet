@@ -1,0 +1,135 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _("My Wallet") }}{% endblock %}
+
+{% block style %}
+{{ super() }}
+{% if theme_css %}
+<style id="alphax-portal-theme">{{ theme_css | safe }}</style>
+{% endif %}
+{% endblock %}
+
+{% block page_content %}
+<div class="container py-4" style="max-width: 880px;">
+
+    {% if brand and brand.logo %}
+    <div class="d-flex align-items-center mb-4" style="gap: 14px;">
+        <img src="{{ brand.logo }}" alt="{{ brand.brand_display_name }}"
+             style="height: 44px; max-width: 200px; object-fit: contain;"/>
+        <div>
+            <h1 class="mb-0" style="color: var(--alphax-primary, #7A2F87); font-size: 1.5rem;">
+                {{ brand.brand_display_name or _("My Wallet") }}
+            </h1>
+            {% if brand.tagline %}
+            <div style="font-size: 0.85rem; color: #6B7280;">{{ brand.tagline }}</div>
+            {% endif %}
+        </div>
+    </div>
+    {% else %}
+    <h1 class="mb-4" style="color: var(--alphax-primary, #7A2F87);">
+        {{ _("My Wallet") }}
+    </h1>
+    {% endif %}
+
+    {% if message %}
+        <div class="alphax-empty-state">
+            <h4>{{ message }}</h4>
+        </div>
+
+    {% elif wallet %}
+        <!-- Balance hero card -->
+        <div class="alphax-portal-balance">
+            <div class="balance-label">{{ _("Available Balance") }}</div>
+            <div class="balance-amount">
+                {{ frappe.utils.fmt_money(wallet.available, currency=wallet.currency) }}
+            </div>
+            <div class="balance-meta">
+                <div>
+                    <span style="opacity:0.7;">{{ _("Current Balance") }}:</span>
+                    {{ frappe.utils.fmt_money(wallet.current_balance, currency=wallet.currency) }}
+                </div>
+                <div>
+                    <span style="opacity:0.7;">{{ _("Held") }}:</span>
+                    {{ frappe.utils.fmt_money(wallet.held_amount, currency=wallet.currency) }}
+                </div>
+                <div>
+                    <span style="opacity:0.7;">{{ _("Status") }}:</span>
+                    {{ wallet.status }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Transaction history -->
+        <h3 class="mt-5 mb-3">{{ _("Recent Transactions") }}</h3>
+
+        {% if transactions %}
+            <table class="alphax-tx-table">
+                <thead>
+                    <tr>
+                        <th>{{ _("Date") }}</th>
+                        <th>{{ _("Type") }}</th>
+                        <th>{{ _("Reference") }}</th>
+                        <th style="text-align:right;">{{ _("Amount") }}</th>
+                        <th style="text-align:right;">{{ _("Balance") }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for tx in transactions %}
+                        {% set is_credit = tx.transaction_type in ("Deposit", "Refund", "Hold Release") %}
+                        <tr>
+                            <td>{{ frappe.utils.format_datetime(tx.posting_datetime, "medium") }}</td>
+                            <td>
+                                {{ tx.transaction_type }}
+                                {% if tx.status != "Active" %}
+                                    <span style="font-size:0.8em;color:#9CA3AF;">({{ tx.status }})</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if tx.reference_name %}
+                                    {{ tx.reference_doctype }} — {{ tx.reference_name }}
+                                {% elif tx.remarks %}
+                                    <span style="color:#6B7280;">{{ tx.remarks }}</span>
+                                {% else %}
+                                    —
+                                {% endif %}
+                            </td>
+                            <td style="text-align:right;"
+                                class="{% if is_credit %}alphax-tx-amount-credit{% else %}alphax-tx-amount-debit{% endif %}">
+                                {% if is_credit %}+{% else %}−{% endif %}{{ frappe.utils.fmt_money(tx.amount, currency=tx.currency) }}
+                            </td>
+                            <td style="text-align:right;">
+                                {{ frappe.utils.fmt_money(tx.balance_after, currency=tx.currency) }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="alphax-empty-state">
+                <p>{{ _("No transactions yet. Top up your wallet to get started.") }}</p>
+            </div>
+        {% endif %}
+
+    {% else %}
+        <div class="alphax-empty-state">
+            <h4>{{ _("Wallet not found") }}</h4>
+        </div>
+    {% endif %}
+
+    {% if brand and brand.footer_html %}
+    <div class="mt-5 pt-4" style="border-top: 1px solid #E5E7EB; color: #6B7280; font-size: 0.85rem;">
+        {{ brand.footer_html | safe }}
+        {% if brand.support_email or brand.support_phone %}
+        <div class="mt-2">
+            {% if brand.support_email %}
+            <span>{{ _("Support") }}: <a href="mailto:{{ brand.support_email }}">{{ brand.support_email }}</a></span>
+            {% endif %}
+            {% if brand.support_phone %}
+            <span class="ml-3">{{ brand.support_phone }}</span>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

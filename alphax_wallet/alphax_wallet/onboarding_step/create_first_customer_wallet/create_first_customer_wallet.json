@@ -1,0 +1,19 @@
+{
+ "action": "Create Entry",
+ "action_label": "New Customer Wallet",
+ "creation": "2025-05-10 00:00:00",
+ "description": "## Step 3 — Create your first Customer Wallet\n\nWallets are auto-created when you save a new Customer (if the option is on in Wallet Settings), or you can create one manually here.\n\nA wallet is unique per **(Customer, Currency)**. Most customers need just one wallet in your default currency, but multi-currency customers will have multiple.\n\n**What to fill in:**\n- **Customer** — pick any existing customer\n- **Currency** — defaults to the customer's currency\n- **Status** — leave as Active\n- **Credit Limit** — optional soft cap for warnings\n\nClick Save. Balance starts at zero. You'll fund it in the next step.",
+ "doctype": "Onboarding Step",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "name": "Create First Customer Wallet",
+ "owner": "Administrator",
+ "reference_document": "Customer Wallet",
+ "show_form_tour": 0,
+ "show_full_form": 1,
+ "title": "Create First Customer Wallet",
+ "validate_action": 1
+}

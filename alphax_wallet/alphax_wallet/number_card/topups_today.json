@@ -1,0 +1,21 @@
+{
+ "aggregate_function_based_on": "amount",
+ "creation": "2025-05-10 00:00:00",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Wallet Transaction",
+ "dynamic_filters_json": "[[\"Wallet Transaction\",\"posting_datetime\",\">=\",\"frappe.datetime.get_today()\",false]]",
+ "filters_json": "[[\"Wallet Transaction\",\"transaction_type\",\"=\",\"Deposit\",false]]",
+ "function": "Sum",
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Top-ups Today",
+ "modified": "2025-05-10 00:00:00",
+ "modified_by": "Administrator",
+ "module": "AlphaX Wallet",
+ "name": "Top-ups Today",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}
